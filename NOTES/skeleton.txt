@@ -1,0 +1,37 @@
+
+Print Digits
+
+Zero = ["  ***  ", " *   * ", "*     *", "*     *", "*     *",
+        " *   * ", "  ***  "]
+One = [" * ", "** ", " * ", " * ", " * ", " * ", "***"]
+Two = [" *** ", "*   *", "*  * ", "  *  ", " *   ", "*    ", "*****"]
+Three = [" *** ", "*   *", "    *", "  ** ", "    *", "*   *", " *** "]
+Four = ["   *  ", "  **  ", " * *  ", "*  *  ", "******", "   *  ",
+        "   *  "]
+Five = ["*****", "*    ", "*    ", " *** ", "    *", "*   *", " *** "]
+Six = [" *** ", "*    ", "*    ", "**** ", "*   *", "*   *", " *** "]
+Seven = ["*****", "    *", "   * ", "  *  ", " *   ", "*    ", "*    "]
+Eight = [" *** ", "*   *", "*   *", " *** ", "*   *", "*   *", " *** "]
+Nine = [" ****", "*   *", "*   *", " ****", "    *", "    *", "    *"]
+
+Digits = [Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine]
+
+
+
+
+Poetry
+
+
+articles = ["the", "a", "another", "her", "his"]
+subjects = ["cat", "dog", "horse", "man", "woman", "boy", "girl"]
+verbs = ["sang", "ran", "jumped", "said", "fought", "swam", "saw",
+         "heard", "felt", "slept", "hopped", "hoped", "cried",
+         "laughed", "walked"]
+adverbs = ["loudly", "quietly", "quickly", "slowly", "well", "badly",
+           "rudely", "politely"]
+           
+           
+           
+           
+           
+

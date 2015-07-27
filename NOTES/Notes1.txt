@@ -1,0 +1,165 @@
+Python
+	Introduction
+	    Van Rossum  1989
+	    easiest to learn
+	    nice to use
+	    concise but not cryptic (expressive)
+	    cross-platform language
+	    Comes with a complete standard library  -   third party libraries
+	    Can perform almost all types of application development
+	        Desktop application
+	        GUI development
+	        Web Programming
+	        Analytics & Processing
+	        Automation & Sys Admin
+	        Programming hardware
+	        .................
+	Installation
+	Setting up the editor
+	    gedit
+	    install additional plugins
+            sudo apt-fast install gedit-plugins gedit-developer-plugins 
+
+	    Start gedit
+	    go to Edit -> Preferences
+	    select the editor tab
+	    Change Tab width: to 4.
+        Select (make sure a check mark is in) Insert spaces instead of tabs.
+        Turn on Automatic indentation as well.
+        Open the View tab and turn on Display line numbers.
+        Go to plugins tab
+        Bracket completion
+        Code Comment
+        External tools 
+        Autcomplete
+
+    Add terminal to your dock  
+        basics of shell
+            ls, mkdir, cp, mv, rm, chmod
+              
+
+	Python Shell
+	    Open terminal
+	    type python3
+	    create a working directory
+	    switch between terminal and gedit
+	    
+    Helloworld Program
+        Creation
+        Execution - permission
+        
+	Beauty of Python
+		Data types
+		    x = 3
+		    y = "red"
+		    z = 2**217
+		    pi = math.pi
+		    ten = "10"
+		    tenval = int(ten)
+		    ninety = str(90)
+		    welcome = "ಸುಸ್ವಾಗತ"
+		    
+		Object References
+		    x = "red"
+		    y = "green"
+		    z = x 
+		    
+		    print(x,y,z)
+		    z=y
+		    print(x,y,z)
+		    x=z
+		    print(x,y,z)
+		    
+		    a = 4
+		    b = a
+		    a = "One"       #dynamic typing
+		    
+        Data collections
+        
+            varTuple = ("red","green","blue")
+            varTuple[2]
+            len(varTuple)
+            varTuple[2] = "yellow"  # invalid
+
+            varList = [1,2,3,4]
+            varList[2]
+            len(varList)
+            varList.append(4)
+            varList.remove(2)
+            varList.append("Raju")
+            2 in varList
+            8 in varList
+
+            searching in a string
+            myString = "mary had a little lamb"
+            "had" in myString
+            
+        Logical OPerations
+            a = ["ab", 1, "cd", 2]
+            b = ["ab", 1, "cd", 2]  
+            a is b
+            b = a
+            a is b
+            
+            a = "something"
+            b = None
+            a is not None, b is None
+        
+        Comparison
+            a = 3
+            b = 6
+            a == b
+            a < b
+            a <= b, a != b, a >= b, a >b
+            
+            a = "some text"
+            b = "some text"
+            a is b
+            a == b
+            
+            Range checking
+                a=9
+                0 <= a <= 14         
+                
+                
+                 
+	    Strings
+	
+		    ' '
+		    " "
+		    """  """
+		    
+		    
+		    
+		Input Output
+		    input
+		    print
+		    
+		    second.py 
+        Control Structures
+            if statement
+            
+                if bool_expr1:
+                    suite1
+                elif bool_expr2:
+                    suite2
+            
+            
+                elif bool_exprn:
+                    suiten
+                else:
+                    suitex
+            
+            example: test.py, quadratic.py
+            
+            
+        Functions
+        def triarea(a,b,c):
+            """ Triangle area calculation"
+            s = (a+b+c)/2
+            return math.sqrt(s*(s-a)*(s-b)*(s-c))
+            
+        Exception Handling
+        
+        
+

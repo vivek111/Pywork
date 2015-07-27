@@ -1,0 +1,155 @@
+Unicode Operations
+-----------------------------------
+
+num="\N{kannada digit five}\u0cec\U00000CED\N{euro sign}"
+val="\n{Kannada digit two}"
+ascii(val)
+
+-----------------------------------------------------------
+
+Slicing and Striding
+
+Slicing
+--------------
+
+k="Sit tumkur"
+k[2]-Prints second character
+k[-2]-second char from last
+k[start:end]-prints range of char from start to end-1
+
+k[:4]-first 4 characters
+start and end should be valid values
+we can also use negative values for range
+
+k[-4:]
+k[-5:-1]
+
+If we type invalid index we get a null string
+
+We can also change contents of string using slicing
+
+k=k[:4]+"python"+k[8:]
+
+Striding
+------------------------
+
+k[start:end:step]
+k="siddaganga mutt"
+k[1:9:2]--It skips the data in 2 characters
+
+k[1::2]
+k[::-1]
+k[::-3]
+
+check all combinations
+
+String Functions
+-------------------
+1)  .join(list)
+-------
+str="$"*3
+str=int("4")*8
+
+fruits=["apples","grapes","oranges"]
+"[[[]]](())".join(fruits)
+
+k=""+.join(fruits)
+
+2)
+
+strname.islower()--checks oly for alphabets and ignores other chars
+strname.isupper()
+strname.istitle()-checks whether it is in title case or not
+strname.isspace()-checks for spaces in only spaces string
+
+Title case means each starting character is upper case
+
+strname.isspace()-check for white spaces(new line,tab,space)
+
+strname.isdecimal()
+strname.isdigit()
+strname.isnumeric()
+strname.isalpha()
+strname.isalnum()
+
+strname.set.lower()
+strname.set.upper()
+strname.set.capitalize()
+
+s="siddaganga mutt"
+s.center(30,padding character)
+s.center(30,"*")
+
+s.ljust(20)
+s.ljust(20,"=")
+s.rjust(20)
+s.rjust(30,"*")
+
+s="I am learning a new move in chess"--gives the no of occurances of a string in main string
+s.count("ss")
+s.count("a")
+s.count("a",11,20)
+s.count("a",11)
+s.count("a",0,5)
+
+s[:11].count("a")
+
+use with negative indexes also
+
+s.find("a")
+s.find("a",10,20)
+s.find("a",20)
+s.find("a",0,12)
+
+use with negative indexes also
+
+s.find("/")---if not present it returns -1
+
+s.index("a")
+s.index("a",10,20)
+s.index("a",20)
+s.index("a",0,12)
+
+s.index("/")---if not present it raises an exception
+
+s="abcdefghijklm"
+p=s.partition("fgh")
+s.rpartition("fgh")
+s.split()---splits the string a good boy
+
+s="abcabcdjfsjlsjgjabckk;lkabcjlkjklajabc"
+s.replace("abc","***")---------
+s.replace("abc","***",2)
+
+s="abcd"---Extending the string length
+s.zfill(8,"*")
+
+s="njkdnjksfjkabcdlgkbnkjbndijdijfgh"
+s.startswith("abc")
+s.startswith("abc",3)
+s.startswith("abc",3,5)--excluding 5
+
+s.endswith---do same 
+
+date="3:jul:2015"
+datacoll=date.split(":")
+x='''"The date is "+ datacoll[0]+" The month is "+datacoll[1] +" The year is "+datacoll[2]'''
+print(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

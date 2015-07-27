@@ -1,0 +1,275 @@
+'   '
+"   "
+'''     '''
+"""     """
+
+a = "ref"
+b = "erence"
+c = a + b
+
+c=("ref""erence")
+
+
+\n
+\\
+\"
+\'
+\a              bell
+\b              backspace
+\N{name}        unicode
+\ooo            char with given octal value
+\uhhhh          unicode - 16bit hex
+\Uhhhhhhhh      unicode - 32bit hex
+
+
+num = "\N{kannada digit five} \u0cec \U00000CED \N{yen sign}"
+
+val = "\N{kannada digit zero}"
+ascii(val)
+
+
+Slicing & striding
+
+s = "siddaganga mutt"
+s[2]
+
+slicing
+
+str[start:end]
+
+
+s[2:5]
+s[:5]
+
+s[-3]
+s[2:-3]
+
+s="sidda"
+s[-7: 2]      
+
+s= "post man"
+s = s[:5] + "wo" + s[5:]         
+
+striding
+
+str[start:end:step]
+
+s = "siddaganga mutt"
+s[1:9:2]
+s[1::2]
+s[::2]
+
+Reversing a string
+s[::-1]
+s[-1:2:-2] == s[:2:-2]
+s[0:-5:3] == s[:-5:3]
+
+
+
+a = "ref"
+b = "erence"
+c = a + b
+
+a,b,c
+
+a+=b
+
+a,b,c
+
+fruits = ["Apples", "Oranges", "Mangoes"]
+" ".join(fruits)
+"--<>--".join(fruits)
+b.join(fruits)
+"".join(fruits)
+row = "".join(fruits)
+
+row.islower()
+row.isupper()
+row.istitle()
+
+
+
+
+emp = "       "
+emp.isspace()
+
+test = "1234"
+test.isnumeric()
+
+num = "\u0cec"
+num.isdecimal()             #unicode decimal
+num.isdigit()
+
+num="೪"
+num.isdecimal()             #unicode decimal
+num.isdigit()
+num.isnumeric()
+
+
+
+test = "abcd123"
+test.isalnum()
+test.isalpha()
+
+
+
+
+
+
+
+set = " ".join(fruits)
+
+cap = set.capitalize()
+tit = set.title()
+low = set.lower()
+
+
+
+
+
+
+
+s = "siddaganga mutt"
+
+s.center(20)
+s.center(20,"*")
+
+s.ljust(20)
+s.ljust(20,"%")
+s.rjust(20)
+s.rjust(20,"$")
+
+
+
+
+
+
+
+
+
+
+s = "I just reached college now"
+s.count("o")
+s.count("ll")
+s.count("e",11,20)
+s.count("e",11)
+s[:11].count("e")
+
+
+
+
+
+
+s.find("o")
+s.find("e",11,20)
+s.find("e",11)
+s.find("e",13)
+
+
+
+
+
+
+
+s.index("o")
+s.index("e",11,20)
+s.index("e",11)
+
+
+s = "abcdefghijklmnabcdefghijklm"
+p = s.partition("fgh")
+q = s.rpartition("fgh")
+
+
+
+
+
+
+s = "abcdefabcdhvksabcxbjdhabcbsf"
+t = s.replace("abc", "***")
+t = s.replace("abc", "***", 2)
+
+
+
+
+s="abcd"
+s.zfill(8)
+
+
+
+
+
+s = "abcdefabcdhvksabcxbjdhabcbsf"
+s.startswith("abc")
+s.startswith("bc",2)
+s.startswith("bc",1)
+s.startswith("bc",3,5)
+
+
+
+
+
+
+
+
+s.endswith("bsf")
+
+
+s = "$"*5
+
+s *= 3
+
+
+
+def extract_from_tag(tag,line):
+    opener = "<" + tag + ">"
+    closer = "</" + tag + ">"
+    try:
+        i = line.index(opener)
+        start = i + len(opener)
+        j = line.index(closer, start)
+        return line[start:j]
+    except ValueError:
+        return None
+
+content = extract_from_tag("red", "what a <red> rose </red> this is")
+print(content)
+   
+        
+def extract_from_tag(tag,line):
+    opener = "<" + tag + ">"
+    closer = "</" + tag + ">"
+    i = line.find(opener)
+    i != -1:
+        start = i + len(opener)
+        j = line.find(closer, start)
+        if j != -1:
+            return line[start:j]
+    return None
+    
+extract_from_tag("red", "what a <red> rose </red> this is")
+
+
+date = "3:7:2015"
+datecollection = date.split(":")
+
+
+
+
+
+
+
+
+record = "Leo Tolstoy*1828-8-28*1910-11-20"
+fields = record.split("*")
+fields
+
+born = fields[1].split("-")
+born
+
+died = fields[2].split("-")
+
+find age
+
+
+

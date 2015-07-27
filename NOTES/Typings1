@@ -1,0 +1,143 @@
+Day 4
+---------------
+
+String formatting
+----------------
+See strformat.py
+
+We can also interchange positional parameters.
+
+s=s.format(,age=50,who="She")
+
+color=["brown","blue","grey","red"]
+0 will be pointing to colour.
+s="his eyes are {0[1]} and hair is {0[2]}"
+s=s.format(color)
+
+d=dict(animal="elephant",wt=12000)
+"The {0[animal]} weighs {0[wt]} kg".format(d)
+
+d=dict(animal="elephant",wt=12000)---doesn't work
+"The {0[0} weighs {0[1]} kg".format(d)
+--------------------
+
+unic="ಇಈ"
+"{0!s} {0!a}".format(unic)
+
+s-printing in string format
+a-printing in ASCII format
+
+----------------------
+Outputting in a certian format
+
+:     fill              align        sign       #(bin,dec..)       0(pad no)     width.precision(min width).(how many digits shown aftr decimal)      type(extensions like short,long...)
+     Any             
+     char
+     exception
+     }
+
+shared on moodle.
+
+s="The sword of truth"
+"{0}".format(s)
+
+s="The sword of truth"
+"{0:25}".format(s)
+
+25-min field width
+
+s="The sword of truth"
+"{0:>25}".format(s)
+
+s="The sword of truth"
+"{0:^25}".format(s)
+
+s="The sword of truth"
+"{0.10}".format(s)
+
+.followed by digit is max width
+
+s="The sword of truth"
+maxwd=12
+"{0}".format(s[:maxwd])
+
+s="The sword of truth"
+"{0:.{1}}".format(s,maxwd)
+
+Integers
+--------------------------
+"{0:012}".format(8984383)
+
+
+import math
+
+see the shared file.
+---------------------------------------
+
+Data Collections
+--------------
+
+Tuples
+lists
+str
+bytes(stores data in binary nos)
+bytearray
+
+Tuples
+--------
+ordered sequence of zero or more object reference.
+slicing and striding are same
+
+creation
+
+emp=tuple()
+t=("neo",96,-54,6.787)
+usage of paranthesis is not mandatory
+print(t[2])
+
+Functions
+
+t.index(element)
+
+Tuples dont have find method
+print(t[2][1])
+
+Tuples in tuple
+-----------------
+
+hair=('blck','blue','green')
+eye=('black','blue','brown')
+
+pair=(hair,eye)
+
+
+things=(4,8.9,('green',('123','pQr'),'list'))
+things[2][1][1][1]
+
+
+manufacturer,model,seating=(0,1,2)
+MIN,MAX=(0,1)
+
+aircraft=("Airlindia","A380",(100,250))
+aircraft[seating][MAX]
+
+Sequence unpacking
+
+a=("v",5,9)
+b=("a",6,3)
+
+a,b=(b,a)
+
+for x,y in((3,4),(5,12),(28,45)):
+    print(math.hypot(x,y))
+    
+Named Tuples
+-------------
+
+sale=collections.namedtuple("Sale","productid","csid",date,qty,price)
+sales=[]
+sales.append(sale("2","3","5",    
+    
+    
+    
+    

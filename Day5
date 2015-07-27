@@ -1,0 +1,124 @@
+Day 5
+-------------
+emp=list()
+emp=[]
+list=[1,2,"three",4.56]
+
+Slicing and striding does work here too
+
+l=[1,2,[23,"string]]
+l[2:5]
+All work here also
+
+We cn test fr membership using in operator
+
+t=[1,"a",2,"b"]
+m=[23,56]
+k=t+m
+In tuples also we can concatenate as above
+
+k*3
+
+for sequence unpacking we use a special operator *
+
+first,*remaining=["a","b","c","d"]
+
+we can split using split operator
+s="first,middle,mid,last"
+first,*middle,last=s.split()
+
+splitlist=[first,middle,last]
+
+Absolute path name
+
+directories,archive="/usr/local/lib/libgraph.a".split("/")
+directories,archive
+
+see staroprtr.py file
+
+Delete operation
+
+Using del word
+either single or whole list can be deleted
+
+j=[1,2,3,4,5,"neo"]
+del j[5]
+del j[2:8]
+
+j[2:5]=[]----same as deleted
+not allowed in tuple
+
+Striding
+
+x=[1,2,3,4,5,6,7,8,9,0]
+x[0:9:2]
+
+x[1::2]=[0]*len(x[1::2])
+
+replaces certian elements with zero
+
+for i in range(len(l))
+    l[i]=process(l[i])
+    
+l=[1,2,3,6,7,8,9,0]
+x=len(l)
+
+double the contents of list.
+
+l=[1,"abc",2.3]
+l.count("abc")
+
+m=(7,8,9)
+l.extend(m)
+
+l.insert(position,value)
+
+l[2:2]=["orange"]
+
+m=[1,2,3]
+p[2:2]=m
+
+single are added
+
+l[2:6]=m
+
+At position 2 to 6
+all values are replaced
+
+l.pop()---deletes last element
+it gives the deleted value as return values
+
+l.remove()
+
+l.reverse()
+
+Generating lists
+
+leaps=[]
+for year in range(1980,2020):
+    if(year%4==0 and year%100!=0) or (year%400==0):
+        leaps.append(year)
+        
+[item for item in iterable]        
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

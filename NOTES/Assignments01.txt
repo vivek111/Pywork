@@ -1,0 +1,29 @@
+Write a program which accepts a number n between 1 and 100 from the user and displays all numbers between 1 and 1000 not divisible by n.
+
+We define twin primes as a pair of prime numbers which differ by 2. Write a program to display the first 25 twin primes.
+
+Two integers are said to be coprime (or relatively prime) if they have no common positive divisor other than 1 or, equivalently, if their gcd is 1. Write a program which accepts an integer n and displays all coprime pairs (a, b) where a and b are positive integers less than n.
+
+Positive Integers a, b, c are pythagorean triplets if a2 + b2 = c2 . Write a program which displays all pythagorean triplets (a, b, c) if c < 100.
+
+Write a program to sum the elements of a sequence of integers, terminated by a negative value, excluding the negative value
+
+Develop and test a program that determines how many breaths and how many heartbeats a person has had in their life. The average respiration (breath) rate of people varies with age. Use the breath rates given below for use in your program,
+Infant                  Breaths per Minute
+1–4 years               25–60
+5–14 years              20–30
+15–18 years             15–25
+                        11–23
+
+For heart rate, use an average of 67.5 beats per second.
+
+
+
+Password Encryption/Decryption program
+
+create a encryption list [('a','m'), ('b','o'), ('c','q'), ('d','s'), ('e','u'), ('f','w'), ('g','y')]
+
+program will ask to enter password
+encrypt and show password
+later enter encrypted password
+decrypt to obtain original password

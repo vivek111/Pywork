@@ -1,0 +1,212 @@
+String Formatting
+"The class {0} started {1} days back".format("Intro to Python", 4)
+
+concatenating str and int
+"Amount due is Rs" + 400          #invalid
+
+"{0}{1}".format("Amount due is Rs", 400)
+
+x = "three"
+s = "{0}{1}{2}"             #modify
+s = s.format("The", x, "musqueteers")
+
+
+
+
+Field Names
+"{who} turned {age} this year".format(who="She", age=30)
+"The {who} was {0} last week".format(12, who="boy")
+
+color = ["brown", "blue", "gray", "red"]
+"his eyes are {0[1]} and hair is {0[2]}".format(color)
+
+d = dict(animal = "elephant", weight = 12000)
+"The {0[animal]} weighs {0[weight]} kg".format(d)
+
+unic = "ಇಈ"
+"{0!s} {0!a}".format(unic)              #string form ascii form
+
+
+Formatting
+
+:   fill    align   sign    #   0   width .precision    type
+
+s = "the sword of truth"
+"{0}".format(s)
+"{0:25}".format(s)
+"{0:>25}".format(s)
+"{0:^25}".format(s)
+"{0:.<25}".format(s)
+"{0:*^25}".format(s)
+"{0:.10}".format(s)         #max width
+
+maxwd = 12
+"{0}".format(s[:maxwd])     #slice
+
+"{0:.{1}}".format(s, maxwd)
+
+
+
+
+
+
+
+
+
+Integers
+"{0:012}".format(8749203)       #0pad
+
+"{0:012}".format(-8749203)
+
+"{0:0=12}".format(8749203)      #fill minwid 12
+
+"{0:0=12}".format(-8749203)
+
+"{0:*=12}".format(8749203)      #fill minwid 12
+
+"{0:*<15}".format(879849203)      
+
+"{0:*>15}".format(879849203)      
+
+"{0:*^15}".format(879849203)      
+
+
+
+
+
+
+Float values
+
+ "{0:12.4e}".format(math.pi)
+'  3.1416e+00'
+
+"{0:12.4f}".format(math.pi)
+'      3.1416'
+
+"{0:*>12.4f}".format(math.pi)
+'******3.1416'
+"{0:*>+12.4f}".format(math.pi)      #force sign
+'*****+3.1416'
+
+
+
+
+
+
+
+Sequence Types
+    Tuples
+    Lists
+    str
+    bytes
+    bytearray
+    
+Tuples
+    ordered sequence of zero or more object references
+    slicing & striding as in strings
+    
+Creation
+emp = tuple()
+
+t = "Neo", -567, "aqua", 34, 3.14, 34
+t = ("Neo", -567, "aqua", 34, 3.14, 34)
+
+t.count(34)
+t.index(34)
+t.find(34)              #invalid
+
+"aqua" in t
+
+"teal" in t
+
+hair = "black", "brown", "blonde", "red"
+hair[2]
+hair[-3:]
+
+
+
+
+
+
+
+
+
+HAIR = hair[:2], "grey", hair[2:]
+
+hair[:2]+("grey",)+ hair[2:]
+
+
+NESTING
+eyes = ("blue", "brown", "black")
+colors =(hair, eyes)
+(('black', 'brown', 'blonde', 'red'), ('blue', 'brown', 'black'))
+
+things = (4, 8.9, ( "green", ("123", "pQr"), "list"))
+
+things[2][1][1][-1]
+
+
+
+
+
+Manufacturer, Model, Seating = (0, 1, 2)
+MIN,MAX = (0,1)
+
+aircraft = ("Lockheed Martin", "A430-300", (100,250))
+aircraft[Seating][MAX]
+
+
+
+
+
+
+
+
+
+
+Sequence unpacking
+a,b = (b,a)
+
+
+for x,y in ((3,4), (5,12), (28,45)):
+    print(math.hypot(x,y))
+    
+    
+NAmed Tuples
+
+
+
+Sale = collections.namedtuple("Sale", "productid customerid date quantity price")
+
+sales = []
+sales.append(Sale(432, 921, "2008-09-14", 3, 7.99))
+sales.append(Sale(932, 567, "2008-09-15", 1, 34.99))
+
+
+total = 0 
+for sale in sales:
+    total += sale.quantity * sale.price
+print("Total = %f" %total)
+
+
+
+
+
+
+
+
+Aircraft = collections.namedtuple("Aircraft", "manufacturer model seating")
+Seating = collections.namedtuple("Seating", "min max")
+aircraft = Aircraft("Lockheed Martin", "A430-300", Seating(100,250))
+aircraft.seating.max
+
+
+
+
+
+
+
+
+
+
+

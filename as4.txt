@@ -1,0 +1,4 @@
+The turtle package can be downloaded using the following command
+
+"sudo apt-get install python3-tk"
+

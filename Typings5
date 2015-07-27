@@ -1,0 +1,25 @@
+Maps and dictionaries
+
+all the keys are immutable
+d1=dict()
+d1=dict({"id":1928,"name": "john","size":3})
+d1=dict([("id":1928),("name": "john"),("size":3)])
+d1=dict(zip(()))
+
+d={"root":19,"blue:[16,'b',2],21:"mercury",-14:None,"mars":"rover",(4,11):8,0:45}
+d["mars"]
+
+fruit={'apple':.66,'peers':.34]
+fruit['apple']
+fruit[0]--doesnt work
+
+veg_data[['corn',.35],['tomatoes',.56]]
+veg_data["corn"]
+
+veg_prices=dict(veg_data)
+
+.keys
+,values
+.items
+
+
